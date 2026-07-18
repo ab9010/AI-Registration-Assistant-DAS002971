@@ -159,6 +159,19 @@
       ]
     },
     {
+      "tag": "project_features",
+      "patterns": [
+        "what features did you implement",
+        "tell me about your project features",
+        "what does this chatbot do",
+        "features of this project",
+        "how did you build this"
+      ],
+      "responses": [
+        "This project includes machine-learning intent classification, entity extraction, email validation, dialog-state management, JSON storage, sentiment logging, a Flask web interface, and an admin analytics dashboard."
+      ]
+    },
+    {
       "tag": "goodbye",
       "patterns": [
         "bye",

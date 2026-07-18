@@ -53,12 +53,12 @@ AI_Registration_Assistant_DAS002971/
 
 ## Installation
 
-1. Install Python 3.10 or later.
+1. Install Python 3.11, 3.12, or 3.13. Python 3.13 is recommended for the pinned dependencies.
 2. Open a terminal inside the project folder.
 3. Create a virtual environment:
 
 ```bash
-python -m venv venv
+py -3.13 -m venv venv
 ```
 
 4. Activate it.
