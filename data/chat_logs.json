@@ -118,5 +118,61 @@
     "confidence": 1.0,
     "state": "await_name",
     "sentiment": "neutral"
+  },
+  {
+    "timestamp": "2026-07-18T17:08:59.709207+00:00",
+    "message": "hello",
+    "intent": "greeting",
+    "confidence": 0.99,
+    "state": "idle",
+    "sentiment": "neutral"
+  },
+  {
+    "timestamp": "2026-07-18T17:09:05.360193+00:00",
+    "message": "what features",
+    "intent": "project_features",
+    "confidence": 0.177,
+    "state": "idle",
+    "sentiment": "neutral"
+  },
+  {
+    "timestamp": "2026-07-18T17:09:26.893892+00:00",
+    "message": "who apply",
+    "intent": "eligibility",
+    "confidence": 0.99,
+    "state": "idle",
+    "sentiment": "neutral"
+  },
+  {
+    "timestamp": "2026-07-18T17:10:00.020945+00:00",
+    "message": "Is it free?",
+    "intent": "fees",
+    "confidence": 0.99,
+    "state": "idle",
+    "sentiment": "neutral"
+  },
+  {
+    "timestamp": "2026-07-18T17:10:13.041642+00:00",
+    "message": "Register me",
+    "intent": "register",
+    "confidence": 0.99,
+    "state": "await_name",
+    "sentiment": "neutral"
+  },
+  {
+    "timestamp": "2026-07-18T17:10:20.471794+00:00",
+    "message": "pytest -q",
+    "intent": "name",
+    "confidence": 1.0,
+    "state": "await_email",
+    "sentiment": "neutral"
+  },
+  {
+    "timestamp": "2026-07-18T17:12:40.001948+00:00",
+    "message": "Register me",
+    "intent": "register",
+    "confidence": 0.99,
+    "state": "await_name",
+    "sentiment": "neutral"
   }
 ]
