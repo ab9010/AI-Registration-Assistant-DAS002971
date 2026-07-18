@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | AI Registration Assistant</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="dashboard-body">
+  <main class="dashboard-shell">
+    <header class="dashboard-header">
+      <div><p class="eyebrow">AI-SS-001 ANALYTICS</p><h1>Admin Dashboard</h1><p>Registration activity and conversational AI metrics.</p></div>
+      <a href="/" class="back-link">← Open chatbot</a>
+    </header>
+    <section class="metric-grid">
+      <article class="metric-card"><small>Registrations</small><strong>{{ analytics.total_registrations }}</strong><span>Completed forms</span></article>
+      <article class="metric-card"><small>Messages</small><strong>{{ analytics.total_messages }}</strong><span>Conversation turns</span></article>
+      <article class="metric-card"><small>Positive</small><strong>{{ analytics.sentiment_counts.positive }}</strong><span>Positive messages</span></article>
+      <article class="metric-card"><small>Needs Support</small><strong>{{ analytics.sentiment_counts.negative }}</strong><span>Negative messages</span></article>
+    </section>
+    <section class="dashboard-grid">
+      <article class="dashboard-card"><div class="card-title"><h2>Intent Distribution</h2><span>Live totals</span></div>
+        <div class="intent-list">
+          {% if analytics.intent_counts %}
+            {% set maximum = analytics.intent_counts.values()|max %}
+            {% for intent, count in analytics.intent_counts.items() %}
+              <div class="intent-row"><div><span>{{ intent.replace('_', ' ').title() }}</span><strong>{{ count }}</strong></div><div class="mini-track"><i style="width: {{ (count / maximum * 100)|round }}%"></i></div></div>
+            {% endfor %}
+          {% else %}<p class="empty-state">No conversation data yet.</p>{% endif %}
+        </div>
+      </article>
+      <article class="dashboard-card"><div class="card-title"><h2>Sentiment</h2><span>Lexicon analysis</span></div>
+        <div class="sentiment-stack">
+          <div><span>Positive</span><strong>{{ analytics.sentiment_counts.positive }}</strong></div>
+          <div><span>Neutral</span><strong>{{ analytics.sentiment_counts.neutral }}</strong></div>
+          <div><span>Negative</span><strong>{{ analytics.sentiment_counts.negative }}</strong></div>
+        </div>
+      </article>
+    </section>
+    <section class="dashboard-card registrations-card"><div class="card-title"><h2>Recent Registrations</h2><span>Local JSON records</span></div>
+      <div class="table-wrap"><table><thead><tr><th>ID</th><th>Name</th><th>Email</th><th>Program</th><th>Year</th><th>Experience</th><th>Status</th></tr></thead>
+      <tbody>{% for item in analytics.registrations %}<tr><td><code>{{ item.registration_id }}</code></td><td>{{ item.name }}</td><td>{{ item.email }}</td><td>{{ item.program }}</td><td>{{ item.year }}</td><td>{{ item.experience }}</td><td><span class="status-pill">{{ item.status }}</span></td></tr>{% else %}<tr><td colspan="7" class="empty-state">Complete a registration to populate this table.</td></tr>{% endfor %}</tbody></table></div>
+    </section>
+  </main>
+</body>
+</html>

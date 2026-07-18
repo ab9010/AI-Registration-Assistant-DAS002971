@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI Registration Assistant for internship registration using NLP and machine learning.">
+  <title>AI Registration Assistant | AI-SS-001</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="info-panel">
+      <div class="brand-row"><span class="brand-icon">AI</span><div><strong>Data Alcott Systems</strong><small>Internship Project</small></div></div>
+      <div class="hero-copy">
+        <p class="eyebrow">TASK AI-SS-001</p>
+        <h1>AI Registration Assistant</h1>
+        <p>A conversational student-support chatbot powered by NLP, machine learning, entity extraction, and dialog management.</p>
+      </div>
+      <div class="feature-grid">
+        <article><span>01</span><h3>Intent Recognition</h3><p>TF-IDF and Logistic Regression classify natural-language questions.</p></article>
+        <article><span>02</span><h3>Entity Validation</h3><p>Names, emails, study year, program, and experience are checked.</p></article>
+        <article><span>03</span><h3>JSON Storage</h3><p>Registrations and analytics are saved without a database.</p></article>
+        <article><span>04</span><h3>Admin Analytics</h3><p>Review registrations, intent totals, and sentiment counts.</p></article>
+      </div>
+      <div class="student-card"><div><small>STUDENT</small><strong>Abhinav Singh</strong></div><div><small>CODE</small><strong>DAS002971</strong></div></div>
+    </section>
+
+    <section class="chat-panel">
+      <header class="chat-header">
+        <div class="avatar">AI</div>
+        <div><h2>Registration Assistant</h2><p><span class="status-dot"></span> Online and ready</p></div>
+        <button id="resetButton" class="icon-button" aria-label="Reset conversation" title="Reset">↻</button>
+      </header>
+      <div class="progress-wrap"><div class="progress-meta"><span>Registration progress</span><strong id="progressText">0%</strong></div><div class="progress-track"><div id="progressBar"></div></div></div>
+      <div id="messages" class="messages" aria-live="polite"></div>
+      <div class="quick-actions" id="quickActions">
+        <button data-message="Register me">Start registration</button>
+        <button data-message="Who can apply?">Eligibility</button>
+        <button data-message="What skills are required?">Required skills</button>
+        <button data-message="How do I submit the task?">Submission</button>
+      </div>
+      <form id="chatForm" class="input-area">
+        <input id="messageInput" type="text" autocomplete="off" maxlength="300" placeholder="Type a message..." aria-label="Message">
+        <button type="submit" aria-label="Send message">Send</button>
+      </form>
+      <p class="privacy-note">Demo project: information is stored locally in JSON files.</p>
+    </section>
+  </main>
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hi",
+        "hello",
+        "hey",
+        "good morning",
+        "good evening",
+        "namaste",
+        "hello assistant",
+        "hii there"
+      ],
+      "responses": [
+        "Hello! I am the AI Registration Assistant. I can help you register or answer internship questions. Type 'register' to begin."
+      ]
+    },
+    {
+      "tag": "register",
+      "patterns": [
+        "register me",
+        "i want to register",
+        "apply for internship",
+        "sign me up",
+        "join internship",
+        "start registration",
+        "registration",
+        "i want to apply"
+      ],
+      "responses": [
+        "Great! Let us begin your registration."
+      ]
+    },
+    {
+      "tag": "internship_details",
+      "patterns": [
+        "tell me about internship",
+        "internship details",
+        "what is this internship",
+        "is it online",
+        "work from home",
+        "duration of internship",
+        "company name"
+      ],
+      "responses": [
+        "This is a free online AI and Data Science internship by Data Alcott Systems. The project is completed remotely and focuses on practical AI, NLP, and machine-learning skills."
+      ]
+    },
+    {
+      "tag": "eligibility",
+      "patterns": [
+        "who can apply",
+        "am i eligible",
+        "eligibility",
+        "can beginners join",
+        "student eligibility",
+        "required qualification"
+      ],
+      "responses": [
+        "Students and beginners interested in AI, data science, Python, or software development can apply. Basic computer knowledge is enough to start."
+      ]
+    },
+    {
+      "tag": "required_skills",
+      "patterns": [
+        "skills required",
+        "what should i know",
+        "do i need python",
+        "required technology",
+        "prerequisites",
+        "coding knowledge"
+      ],
+      "responses": [
+        "Basic Python is helpful. This project uses Python, NLTK, scikit-learn, Flask, HTML, CSS, JavaScript, and JSON storage."
+      ]
+    },
+    {
+      "tag": "documents",
+      "patterns": [
+        "documents required",
+        "what documents",
+        "need resume",
+        "certificate required",
+        "college id",
+        "document submission"
+      ],
+      "responses": [
+        "For this demonstration, no document upload is required. Enter valid personal and academic details and keep your GitHub, report, screenshots, and demo video ready for task submission."
+      ]
+    },
+    {
+      "tag": "fees",
+      "patterns": [
+        "is it free",
+        "fees",
+        "registration fee",
+        "any payment",
+        "cost of internship",
+        "do i pay"
+      ],
+      "responses": [
+        "The task description identifies this as a free online internship. No payment is collected by this chatbot."
+      ]
+    },
+    {
+      "tag": "status",
+      "patterns": [
+        "application status",
+        "check status",
+        "registration status",
+        "am i registered",
+        "track application",
+        "status of my application"
+      ],
+      "responses": [
+        "After completing the registration flow, the assistant generates a registration ID and stores your details in a local JSON file."
+      ]
+    },
+    {
+      "tag": "submission",
+      "patterns": [
+        "how to submit",
+        "submission process",
+        "where to submit",
+        "github youtube blog",
+        "task submission",
+        "submit project"
+      ],
+      "responses": [
+        "Submit a public GitHub repository, YouTube demonstration, project report, at least five screenshots, and a blog post under the 'Task Submit' category with your GitHub and YouTube links."
+      ]
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "help",
+        "support",
+        "what can you do",
+        "guide me",
+        "show options",
+        "commands"
+      ],
+      "responses": [
+        "I can register you and answer questions about eligibility, fees, required skills, internship details, status, and submission. Type 'register' to start or 'cancel' to stop an active registration."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "thanks",
+        "thank you",
+        "great help",
+        "appreciate it",
+        "thankyou"
+      ],
+      "responses": [
+        "You are welcome! Type 'register' whenever you are ready to apply."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "bye",
+        "goodbye",
+        "see you",
+        "exit",
+        "quit"
+      ],
+      "responses": [
+        "Goodbye! Best wishes for your AI and Data Science internship."
+      ]
+    }
+  ]
+}
