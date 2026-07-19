@@ -10,5 +10,41 @@
     "experience": "Intermediate",
     "created_at": "2026-07-18T14:54:38.810558+00:00",
     "status": "Registered"
+  },
+  {
+    "registration_id": "DAS-20260718-521D57",
+    "task_id": "AI-SS-001",
+    "student_code": "DAS002971",
+    "name": "Rahul Singh",
+    "email": "xyz@gmail.com",
+    "program": "bca",
+    "year": "2",
+    "experience": "Beginner",
+    "created_at": "2026-07-18T18:17:24.104700+00:00",
+    "status": "Registered"
+  },
+  {
+    "registration_id": "DAS-20260719-F78202",
+    "task_id": "AI-SS-001",
+    "student_code": "DAS002971",
+    "name": "Jatin Kumar",
+    "email": "jatin@gmail.com",
+    "program": "btech ai",
+    "year": "1",
+    "experience": "Advanced",
+    "created_at": "2026-07-19T06:08:14.719548+00:00",
+    "status": "Registered"
+  },
+  {
+    "registration_id": "DAS-20260719-5880B6",
+    "task_id": "AI-SS-001",
+    "student_code": "DAS002971",
+    "name": "Ishika Singh",
+    "email": "ish@gmail.com",
+    "program": "mbbs",
+    "year": "2",
+    "experience": "Beginner",
+    "created_at": "2026-07-19T06:25:30.128231+00:00",
+    "status": "Registered"
   }
 ]
